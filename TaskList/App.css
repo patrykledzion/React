@@ -1,0 +1,238 @@
+body
+{
+  margin: 0;
+  user-select: none;
+  background-color: #161925;
+}
+
+main {
+
+  color: #FDFFFC;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.left-section
+{
+  width: 25vw;
+  height: 100vh;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.right-section
+{
+  width: 75vw;
+  height: 100vh;
+  float: left;
+  box-shadow: -2px 0px 0px #4F6777;
+    padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-section h2
+{
+  color: #1A446C;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  
+}
+
+
+.left-section h2 span
+{
+  border-bottom: 7px solid #FDFFFC;
+  border-right: 7px solid transparent;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+
+ 
+
+.left-section form input
+{
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #FDFFFC;
+  color: #161925;
+  font-size: 15px;
+  font-family: Verdana;
+  border: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.left-section input[type=button]
+{
+  margin-top: 20px;
+  background-color: #1A446C;
+  color: #FDFFFC;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.left-section input[type=button]:hover
+{
+  background-color: #FDFFFC;
+  color: #1A446C;
+  font-weight: bold;
+}
+
+.pending-tasks
+{
+  overflow-y: auto;
+  height: 50vh;
+}
+
+.left-section> div
+{
+  width: 90%;
+  border-collapse: seperate; 
+  border-spacing: 0px 15px;;
+  margin: 15px auto;  
+}
+
+.right-section > table.table-main
+{
+  width: 95%;
+  margin-top: 35px;
+  color: #DBDDDA;
+  text-align: center;
+}
+
+
+.right-section > table.table-main td
+{
+  width: calc( 100% / 7 )
+}
+
+.right-section > table.table-main > tr:first-of-type td
+{
+  border-right: 3px solid #1A446C;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.right-section > table.table-main > tr:first-of-type td:last-of-type
+{
+  color: #C1292E;
+}
+
+.right-section .task-row, .dragged-element, .left-section .task-row
+{
+    background-color: #1A446C;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.task-row .task-header
+{
+  display: block;
+  height: 30px;
+  background-color: #1d5285;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+.task-row .task-title
+{
+  display: block;
+  padding: 20px;
+  sbox-sizing: border-box;
+}
+
+.task-row .task-header .del-button
+{
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #c1292e;
+  border-radius: 50%;
+  float: left;
+  cursor: pointer;
+
+}
+
+.task-row .task-header .done-button
+{
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.task-row .task-header .lock-button
+{
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.task-row .task-header .lock-button-locked
+{
+  background-color: gray;
+}
+
+.task-done
+{
+  text-decoration: line-through;
+  opacity: 0.5 !IMPORTANT;
+}
+
+.right-section .task-row:first-of-type
+{
+  margin-top: 30px;
+}
+
+.right-section .task-row-td
+{
+  vertical-align: top;
+  padding-bottom: 100px;
+}
+
+.dragged-element
+{
+  position: fixed;
+}
+
+.dragged-element-hidden
+{
+  display: none !IMPORTANT;
+}
+
+.right-section .task-hidden
+{
+  opacity: 0 !IMPORTANT;
+}
+
+.left-section .task-hidden
+{
+  opacity: 0 !IMPORTANT;
+}
+
+.task-locked
+{
+  opacity: 0.8;
+}
+
